@@ -5,3 +5,5 @@ plotly
 opencv-python
 mediapipe
 tensorflow
+tf-keras
+deepface
