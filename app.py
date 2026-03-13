@@ -16,39 +16,33 @@ st.markdown("""
 ### 📋 Choose a Module
 
 📹 **Analyzer (Local Only)**  
-Run real-time webcam engagement analysis locally on your computer.
+Run webcam engagement analysis locally on your computer.
 
-📊 **Dashboard (Cloud Compatible)**  
-Upload engagement session logs and view analytics.
+📊 **Dashboard (Cloud Supported)**  
+Upload engagement logs and view analytics.
 """)
 
 choice = st.radio("Select Module:", ["📹 Analyzer", "📊 Dashboard"])
 
-# -------------------- ANALYZER --------------------
+# -------- ANALYZER --------
 
 if choice == "📹 Analyzer":
 
-    st.warning("⚠️ The Analyzer uses webcam and OpenCV, so it only runs locally.")
+    st.warning("⚠️ The analyzer uses webcam and cannot run on Streamlit Cloud.")
 
     st.markdown("""
-### How to Run Analyzer Locally
+### Run Analyzer Locally
 
-1️⃣ Open terminal in your project folder.
+Run this command on your computer:
 
-2️⃣ Run:
+It will generate:
 
-
-3️⃣ This will generate a file like:
-
-                
-4️⃣ Upload that file in the **Dashboard section** to view analytics.
+Upload that file in the **Dashboard section**.
 """)
 
-# -------------------- DASHBOARD --------------------
+# -------- DASHBOARD --------
 
 elif choice == "📊 Dashboard":
-
-    st.success("Opening Engagement Dashboard")
 
     dashboard.main()
 
