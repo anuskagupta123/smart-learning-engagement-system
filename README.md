@@ -7,7 +7,12 @@ Using **computer vision and deep learning**, the system measures attention level
 ---
 
 ## 🚀 Live Demo
-https://your-streamlit-app-url.streamlit.app
+
+🔗 **Dashboard:**  
+https://smart-learning-ai-dashboard.streamlit.app/
+
+📂 **GitHub Repository:**  
+https://github.com/anuskagupta123/smart-learning-engagement-system
 
 ---
 
@@ -16,23 +21,27 @@ https://your-streamlit-app-url.streamlit.app
 - 🎥 Real-time engagement analysis using webcam
 - 😊 Emotion detection using DeepFace
 - 👀 Focus tracking with MediaPipe
-- 📊 Engagement analytics dashboard
+- 📊 Interactive engagement analytics dashboard
 - 🧾 Session logging and report generation
+- 🤖 AI-based engagement feedback and recommendations
 
 ---
 
 ## 🛠 Tech Stack
 
-- Streamlit
-- TensorFlow
-- DeepFace
-- OpenCV
-- Pandas
-- MediaPipe
+- **Streamlit** – Dashboard & UI
+- **TensorFlow** – Deep learning framework
+- **DeepFace** – Emotion detection
+- **MediaPipe** – Face and focus tracking
+- **OpenCV** – Computer vision processing
+- **Pandas** – Data analysis
+- **Plotly** – Data visualization
 
 ---
 
 ## 📂 Project Structure
+
+
 smart-learning-engagement-system
 │
 ├── app.py
@@ -40,31 +49,33 @@ smart-learning-engagement-system
 ├── dashboard.py
 ├── requirements.txt
 ├── README.md
-└── session_logs/
+├── session_logs/
+└── train/
 
 
 ---
 
 ## ▶️ Run Locally
 
-Clone the repository
-
-git clone https://github.com/YOUR\_USERNAME/smart-learning-engagement-system.git
+### 1️⃣ Clone the repository
 
 
-Go to project folder
+git clone https://github.com/anuskagupta123/smart-learning-engagement-system.git
+
+
+### 2️⃣ Navigate to the project folder
 
 
 cd smart-learning-engagement-system
 
 
-Install dependencies
+### 3️⃣ Install dependencies
 
 
 pip install -r requirements.txt
 
 
-Run the application
+### 4️⃣ Run the application
 
 
 streamlit run app.py
@@ -90,10 +101,28 @@ Dashboard Visualization
 
 ---
 
+## 📸 Dashboard Preview
+
+The Streamlit dashboard provides:
+
+- Engagement score trends
+- Focus vs emotion analytics
+- Emotion distribution charts
+- AI-generated feedback
+- Downloadable engagement reports
+
+Try the live dashboard here:
+
+👉 https://smart-learning-ai-dashboard.streamlit.app/
+
+---
+
 ## 👩‍💻 Author
 
-**Anuska Gupta**
-
+**Anuska Gupta**  
 AI / ML Developer
+
+GitHub:  
+https://github.com/anuskagupta123
 
 ---
