@@ -6,3 +6,4 @@ matplotlib
 opencv-python
 mediapipe==0.10.32
 protobuf==3.20.3
+plotly
