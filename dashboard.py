@@ -3,13 +3,14 @@ import pandas as pd
 import plotly.express as px
 import os
 
-def main():
+# Page configuration (must be first Streamlit command)
+st.set_page_config(
+    page_title="Smart Learning Engagement Dashboard",
+    page_icon="📊",
+    layout="wide"
+)
 
-    st.set_page_config(
-        page_title="Smart Learning Engagement Dashboard",
-        page_icon="📊",
-        layout="wide"
-    )
+def main():
 
     st.title("📊 Smart Learning Engagement Dashboard")
     st.caption("Visualize attention, focus, and emotions from recorded study sessions.")
@@ -24,16 +25,12 @@ def main():
         type=["csv"]
     )
 
-    df = None
+    if uploaded_file is None:
+        st.info("👈 Upload a session_log CSV file from the sidebar to start analysis.")
+        return
 
-    if uploaded_file is not None:
-
-        df = pd.read_csv(uploaded_file)
-        st.sidebar.success("File uploaded successfully")
-
-    else:
-        st.warning("Upload a session_log CSV file to start analysis.")
-        st.stop()
+    df = pd.read_csv(uploaded_file)
+    st.sidebar.success("File uploaded successfully")
 
     # ---------------- SESSION SUMMARY ----------------
 
@@ -152,5 +149,7 @@ def main():
     st.markdown("---")
     st.caption("Smart Learning Engagement Dashboard © 2025 | Developed by Anuska Gupta")
 
-    if __name__ == "__main__":
-        main()
+
+# Run app
+if __name__ == "__main__":
+    main()
