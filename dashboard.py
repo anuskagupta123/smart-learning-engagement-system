@@ -151,3 +151,6 @@ def main():
 
     st.markdown("---")
     st.caption("Smart Learning Engagement Dashboard © 2025 | Developed by Anuska Gupta")
+
+    if __name__ == "__main__":
+        main()
