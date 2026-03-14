@@ -1,44 +1,99 @@
-# Smart-Learning-Engagement-System
-An AI-driven platform that analyzes student engagement through real-time emotion detection and focus tracking. Using computer vision and deep learning, it measures attention levels, visualizes emotion trends, and generates insightful reports to enhance learning outcomes.  Tech Stack: Streamlit | TensorFlow | DeepFace | OpenCV | Pandas
-# app.py (Main Entry - Smart Learning Engagement System)
-import streamlit as st
-import subprocess
-import os
+# 🧠 Smart Learning Engagement System
 
-st.set_page_config(page_title="Smart Learning Engagement System", page_icon="🧠", layout="centered")
+An AI-driven platform that analyzes **student engagement** through real-time emotion detection and focus tracking.
 
-st.title("🧠 Smart Learning Engagement System")
-st.caption("Analyze student engagement using AI-based emotion, focus, and attention tracking.")
+Using **computer vision and deep learning**, the system measures attention levels, visualizes emotion trends, and generates insightful reports to improve learning outcomes.
 
-st.markdown("---")
+---
 
-st.markdown("""
-### 📋 Choose a Module
-Select whether you want to **analyze a learning session** or **view engagement dashboards**.
+## 🚀 Live Demo
+https://your-streamlit-app-url.streamlit.app
 
-- **📹 Analyzer:** Run real-time or recorded video analysis to generate engagement logs.  
-- **📊 Dashboard:** View visual analytics of engagement, emotion, and focus trends.
-""")
+---
 
-choice = st.radio("Select Module:", ["📹 Analyzer", "📊 Dashboard"])
+## 📌 Features
 
-# -------------------- RUN MODULE --------------------
-if choice == "📹 Analyzer":
-    st.markdown("### 🎥 Running the Analyzer")
-    st.info("This will start your webcam or process a pre-recorded session.")
-    st.write("Make sure your camera and microphone are enabled.")
+- 🎥 Real-time engagement analysis using webcam
+- 😊 Emotion detection using DeepFace
+- 👀 Focus tracking with MediaPipe
+- 📊 Engagement analytics dashboard
+- 🧾 Session logging and report generation
 
-    if st.button("▶️ Launch Analyzer"):
-        st.success("Launching analyzer... (this may take a few seconds)")
-        subprocess.run(["python", "engagement_analyzer.py"])
+---
 
-elif choice == "📊 Dashboard":
-    st.markdown("### 📊 Launching Dashboard")
-    st.info("You can view and compare multiple engagement session reports.")
+## 🛠 Tech Stack
 
-    if st.button("🚀 Open Dashboard"):
-        st.success("Opening Smart Dashboard...")
-        subprocess.run(["streamlit", "run", "dashboard.py"])
+- Streamlit
+- TensorFlow
+- DeepFace
+- OpenCV
+- Pandas
+- MediaPipe
 
-st.markdown("---")
-st.caption("Smart Learning Engagement System © 2025 | Developed by Anuska Gupta")
+---
+
+## 📂 Project Structure
+smart-learning-engagement-system
+│
+├── app.py
+├── engagement_analyzer.py
+├── dashboard.py
+├── requirements.txt
+├── README.md
+└── session_logs/
+
+
+---
+
+## ▶️ Run Locally
+
+Clone the repository
+
+git clone https://github.com/YOUR\_USERNAME/smart-learning-engagement-system.git
+
+
+Go to project folder
+
+
+cd smart-learning-engagement-system
+
+
+Install dependencies
+
+
+pip install -r requirements.txt
+
+
+Run the application
+
+
+streamlit run app.py
+
+
+---
+
+## 📊 System Workflow
+
+
+Webcam Input
+↓
+Face Detection (MediaPipe)
+↓
+Emotion Detection (DeepFace)
+↓
+Engagement Score Calculation
+↓
+Session Logs (.csv)
+↓
+Dashboard Visualization
+
+
+---
+
+## 👩‍💻 Author
+
+**Anuska Gupta**
+
+AI / ML Developer
+
+---
