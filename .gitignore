@@ -2,11 +2,15 @@
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
 # Virtual environments
 venv/
 .venv/
 env/
+
+# Environment variables
+.env
 
 # Jupyter
 .ipynb_checkpoints/
@@ -18,11 +22,16 @@ Thumbs.db
 # Logs
 *.log
 
-# Large ML folders
-site-packages/
-dist/
+# Build files
 build/
+dist/
 
-# Dataset outputs
-*.csv
+# ML models & large files
+*.h5
 *.pkl
+
+# Dataset outputs / session logs
+*.csv
+
+# DeepFace downloaded models
+.deepface/
